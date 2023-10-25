@@ -1,0 +1,122 @@
+import {StyleSheet, Dimensions} from 'react-native';
+import {COLORS, FONTS} from '../../constants';
+const {height, width} = Dimensions.get('window');
+export default StyleSheet.create({
+  container: {
+    backgroundColor: COLORS.white,
+    flex: 1,
+  },
+  innerContainer: {
+    backgroundColor: COLORS.white,
+    alignSelf: 'center',
+    width: width * 0.96,
+  },
+  headcustomer: {
+    color: COLORS.black,
+    fontSize: width * 0.043,
+    ...FONTS.sixHundred,
+    alignSelf: 'center',
+    marginTop: height * 0.01,
+    marginBottom: -4,
+  },
+  oneimg: {
+    width: width,
+    alignSelf: 'center',
+    height: height * 0.22,
+    resizeMode: 'stretch',
+    borderRadius: 0,
+    marginVertical: height * 0.013,
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  listbox: {
+    borderWidth: 1,
+    borderColor: COLORS.primary,
+    backgroundColor: COLORS.white,
+    height: height * 0.038,
+    paddingHorizontal: height * 0.016,
+    alignSelf: 'center',
+    textAlign: 'center',
+    borderRadius: 20,
+    marginHorizontal: width * 0.015,
+    marginVertical: height * 0.02,
+    justifyContent: 'center',
+  },
+  listboxtext: {
+    color: COLORS.primary,
+    ...FONTS.sixHundred,
+    fontSize: width * 0.032,
+    marginBottom: -1,
+  },
+
+  profile: {
+    width: width * 0.09,
+    height: width * 0.09,
+    resizeMode: 'contain',
+    borderRadius: 70,
+  },
+  profilename: {
+    color: COLORS.gray60,
+    fontSize: width * 0.027,
+    ...FONTS.fiveHundred,
+    borderRightWidth: 1.8,
+    width: width * 0.225,
+    marginBottom: -3,
+    textAlign: 'center',
+    borderColor: COLORS.gray40,
+  },
+  sharebox: {
+    elevation: 4,
+    backgroundColor: COLORS.white,
+    width: width * 0.13,
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: height * 0.033,
+    marginLeft: width * 0.03,
+    borderRadius: 20,
+  },
+  share: {
+    width: width * 0.07,
+    height: height * 0.022,
+    resizeMode: 'contain',
+  },
+  Ong_borderbox: {
+    backgroundColor: '#F6F6F6',
+    borderLeftWidth: 3,
+    borderColor: COLORS.primary,
+    marginVertical: height * 0.02,
+    width: width * 0.95,
+  },
+  Ong_borderText: {
+    color: COLORS.gray60,
+    paddingVertical: height * 0.01,
+    paddingHorizontal: width * 0.03,
+    fontSize: width * 0.034,
+    ...FONTS.fiveHundred,
+  },
+  heading: {
+    color: COLORS.black,
+    ...FONTS.sixHundred,
+    fontSize: width * 0.039,
+  },
+  dotbox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: height * 0.006,
+  },
+  dot: {
+    width: width * 0.016,
+    height: width * 0.016,
+    backgroundColor: COLORS.black,
+    borderRadius: 40,
+  },
+  dotText: {
+    color: COLORS.black,
+    ...FONTS.fiveHundred,
+    fontSize: width * 0.034,
+    marginBottom: -3,
+    marginLeft: width * 0.02,
+  },
+});
